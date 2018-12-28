@@ -1,0 +1,21 @@
+01- (create a custom module) 
+    ->create a constructor 
+    ->then to exports the constructor using (module.exports = varName) -when a module is already exports then it already available to require() function
+    ->to call a custom module use ( require('path') )
+
+02- (to run a command promt using node js code) 
+    ->require('child_process').exec and set it to variable
+
+03- (fileSystem)
+    -> require('fs'); ->require fileSystem
+    -> fs.readdirSync('./lib | foldername'); readDirectorySyncronously
+    **************************************************
+        01- (read the directory)
+            -> require('fs'); ->require fileSystem
+            -> fs.readdirSync('./lib | foldername'); readDirectorySyncronously
+            ->Asyncronous and Syncronous all code under fileSystem on the documentation has async and sync option
+                -if the code has Sync next to it, it means its  Syncronous if just the code its async
+        02- (read the content of files)
+            -> can read the content of text and binary files
+                1-> if u want to read the text file as a text so u need to declare a text encoding like UTF-8
+                2-> by default the it automatically read a file as a binary
